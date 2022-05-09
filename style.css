@@ -1,0 +1,12 @@
+body {
+    background-color: beige;
+    background-image: url("/images/back1.jpg");
+    /* background-image: url("/images/back2.jpg"); */
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+}
+
+#title {
+    color: rgb(245, 243, 160);
+}
