@@ -4,6 +4,7 @@ const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
 
 const HIDDEN_CLASSNAME = "hidden";
+const USERNAME_KEY = "username";
 
 function onLoginSubmit(event) {
     // console.dir(loginInput.value);
@@ -16,10 +17,14 @@ function onLoginSubmit(event) {
     // }
     
     event.preventDefault();
+
     console.log(loginInput.value);
-    const username = loginInput.value
-    loginForm.classList.add(HIDDEN_CLASSNAME);
+    const username = loginInput.value;
+    localStorage.setItem(USERNAME_KEY, username);
     console.log(username);
+
+    loginForm.classList.add(HIDDEN_CLASSNAME);
+    
     greeting.innerText = `Hello ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
@@ -28,3 +33,13 @@ function onLoginSubmit(event) {
 
 //submit기능
 loginForm.addEventListener("submit", onLoginSubmit);
+
+const savedUsername = localStorage.getItem(USERNAME_KEY);
+console.log(savedUsername);
+
+if (savedUsername === null) {
+    //show the form
+
+} else {
+    //show th greetings
+}
