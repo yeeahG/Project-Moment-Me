@@ -24,7 +24,11 @@ function onLoginSubmit(event) {
     console.log(username);
 
     loginForm.classList.add(HIDDEN_CLASSNAME);
-    
+
+    paintGreetings(username);
+}
+
+function paintGreetings(username) {
     greeting.innerText = `Hello ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
@@ -44,6 +48,5 @@ if (savedUsername === null) {
     loginForm.addEventListener("submit", onLoginSubmit);
 } else {
     //show th greetings
-    greeting.innerText = `Hello ${savedUsername}`;
-    greeting.classList.remove(HIDDEN_CLASSNAME);
+    paintGreetings(savedUsername);
 }
