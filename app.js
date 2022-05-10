@@ -32,14 +32,18 @@ function onLoginSubmit(event) {
 // loginButton.addEventListener("click", onLoginSubmit);
 
 //submit기능
-loginForm.addEventListener("submit", onLoginSubmit);
+//loginForm.addEventListener("submit", onLoginSubmit);
 
+// use localstorage
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 console.log(savedUsername);
 
 if (savedUsername === null) {
     //show the form
-
+    loginForm.classList.remove(HIDDEN_CLASSNAME);
+    loginForm.addEventListener("submit", onLoginSubmit);
 } else {
     //show th greetings
+    greeting.innerText = `Hello ${savedUsername}`;
+    greeting.classList.remove(HIDDEN_CLASSNAME);
 }
