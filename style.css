@@ -10,3 +10,7 @@ body {
 #title {
     color: rgb(245, 243, 160);
 }
+
+.hidden {
+    display: none;
+}
