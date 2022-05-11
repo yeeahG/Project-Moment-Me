@@ -9,24 +9,27 @@
 </head>
 
 <body>
-    <div id="title">
-        <h1>
-            MY<br>
-            MOME<br>
-            NT.<br>
-        </h1>
+
+    <div id="title" class="hidden">
+        <h1 id="out-text">MY</h1>
+        <h1 id="inner-text">MOME</h1>
+        <h1 id="inner-text">NT.</h1>
     </div>
 
-    <form id="login-form" class="hidden">
-        <input 
-            required maxlength="15"
-            type="text" 
-            placeholder="what is your name?" 
-        />
-        <button>Log in</button>
-    </form>
-    
-    <h1 id="greeting" class="hidden"></h1>
+    <div id="container" class="hidden">
+        NAME ?
+        <form id="login-form" class="hidden">
+            <input 
+                required maxlength="15"
+                type="text" 
+                placeholder="what is your name?" 
+            />
+            <button>Log in</button>
+        </form>
+        
+        <h1 id="greeting" class="hidden"></h1>
+    </div>
+
     <script src="app.js"></script>
 </body>
 

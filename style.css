@@ -7,8 +7,46 @@ body {
     height: 800px;
 }
 
+
 #title {
+    margin: 20px 20px;
+    width: 350px;
+    height: 300px;
+    border-bottom: 2px solid rgb(245, 243, 160) ;
+}
+
+#out-text {
+    font-size: 80px;
+    margin: 0;
+    font-weight: 900;
+
+    color: transparent;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: rgb(245, 243, 160);
+}
+
+#inner-text {
     color: rgb(245, 243, 160);
+    font-size: 80px;
+    margin: 0;
+    font-weight: 900;
+    overflow: overlay;
+}
+
+#container {
+    width: 80%;
+    height: 600px;
+    margin: 100px 100px;
+    border: 3px solid rgb(245, 243, 160);
+}
+
+#login-form {
+    display: flex;
+    justify-content: center;
+}
+
+#greeting {
+    color: white;
 }
 
 .hidden {
