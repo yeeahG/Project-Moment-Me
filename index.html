@@ -4,30 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="style.css">
+    <!-- 잔디 PNG는 699pic에 의해 설계되었고,에서 유래되었다. <a href="https://kor.pngtree.com"> Pngtree.com</a> -->
     <title>Moment me</title>
 </head>
 
 <body>
-
-    <div id="title" class="hidden">
-        <h1 id="out-text">MY</h1>
-        <h1 id="inner-text">MOME</h1>
-        <h1 id="inner-text">NT.</h1>
-    </div>
-
     <div id="container" class="hidden">
-        NAME ?
         <form id="login-form" class="hidden">
-            <input 
+            <h1>WHAT IS YOUR NAME ?</h1>
+            <p>This page is only for you. Feel the feeling of lying on a hill and looking at the sky.</p>
+            <div class="login__input">
+                <input 
                 required maxlength="15"
                 type="text" 
-                placeholder="what is your name?" 
-            />
-            <button>Log in</button>
+                placeholder="write your name" 
+                />
+                <button>Log in</button>
+            </div>
         </form>
+        <!--<img src="./images/land.png" id="land">-->
+        <img src="./images/bg3.png" id="home">
+        <img src="./images/tree.png" id="tree">
         
-        <h1 id="greeting" class="hidden"></h1>
+        <!-- <h1 id="greeting" class="hidden"></h1> -->
+    </div>
+
+    
+    <div id="content" class="hidden">
+        <div id="title">
+            <h1 id="out-text"></h1>
+            <h1 id="inner-text">MOME</h1>
+            <h1 id="inner-text">NT.</h1>
+        </div>
+        
+        <section>
+            <img src="./images/bg2.png" id="hill">
+            
+            <div class="content__one">
+                <i class="uil uil-arrow-circle-right arrow"></i>
+                <img src="./images/icon4.png" id="icon" style="width: 250px;">
+                
+            </div>
+            <!-- <div id="todo">
+            
+                <div class="todo-content1">
+                    <h1>01.</h1>
+                    <input type="text" placeholder="todo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum adipisci odit praesentium unde perferendis molestiae dignissimos exercitationem minima? Qui consequatur earum sed repudiandae similique necessitatibus suscipit dignissimos fugiat officiis ipsum!
+                    </p>
+                </div>
+                <div class="todo-content2">
+                    <h1>02.</h1>
+                    abcdefghijklmnopqrstuvwxyz
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis quibusdam harum tempore accusantium rem! Beatae earum labore laborum ducimus modi nesciunt nisi! Voluptatibus corporis cupiditate obcaecati necessitatibus. Sapiente, facilis non.
+                </div>
+
+            </div> -->
+
+        </section>
+
     </div>
 
     <script src="app.js"></script>
